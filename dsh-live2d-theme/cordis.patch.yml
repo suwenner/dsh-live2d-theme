@@ -1,0 +1,9 @@
+# dsh-live2d-theme bundle patch
+#
+# 通过 bundle 层自注册主条目：只要 package.json 的 dsh.profile.bundles 里还有
+# "dsh-live2d-theme"，这行 insert 就会在每次启动时重新生效。
+# 这样即使 profile/cordis.patch.yml 被应用（如插件页开关、崩溃恢复）重写，
+# 本插件的注册也不会被抹掉。
+- insert:
+    - id: dsh-live2d-theme
+      name: dsh-live2d-theme

@@ -1,0 +1,15 @@
+{
+  "accent": "#ff6b9d",
+  "backgroundImage": "/dsh-live2d-theme/background/bg.jpg",
+  "backgroundOpacity": 0.32,
+  "textColor": "#121212",
+  "textSecondaryColor": "#330439",
+  "gradientDark": "radial-gradient(1200px 800px at 20% -10%, #2a1522 0%, #140d12 55%, #0a0508 100%)",
+  "gradientLight": "radial-gradient(1200px 800px at 20% -10%, #fff0f6 0%, #fdf5f8 55%, #f7ecf3 100%)",
+  "modelUrl": "/dsh-live2d-theme/models/Pio/model.json",
+  "modelWidth": 260,
+  "modelHeight": 360,
+  "marginRight": 165,
+  "marginBottom": 30,
+  "visible": true
+}

@@ -1,0 +1,66 @@
+{
+  "name": "dsh-live2d-theme",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness GUI 美化插件：可换背景图/主色/文本色 + Q版 Live2D 看板娘（可拖动、可缩放、可换模型）",
+  "type": "module",
+  "main": "lib/index.mjs",
+  "exports": {
+    ".": {
+      "default": "./lib/index.mjs"
+    },
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "client.js",
+    "cordis.patch.yml",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {},
+  "license": "MIT",
+  "author": "dsh-live2d-theme contributors",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "theme",
+    "live2d",
+    "waifu",
+    "background",
+    "美化",
+    "看板娘"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<your-name>/dsh-live2d-theme.git"
+  },
+  "homepage": "https://github.com/<your-name>/dsh-live2d-theme#readme",
+  "bugs": {
+    "url": "https://github.com/<your-name>/dsh-live2d-theme/issues"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dshTarget": "0.2.1-rc.2",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    },
+    "install": {
+      "preferred": "tarball",
+      "tarball": "https://codeload.github.com/<your-name>/dsh-live2d-theme/tar.gz/refs/heads/main",
+      "zip": "https://codeload.github.com/<your-name>/dsh-live2d-theme/zip/refs/heads/main",
+      "git": "https://github.com/<your-name>/dsh-live2d-theme.git"
+    }
+  }
+}
