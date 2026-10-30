@@ -23,15 +23,13 @@ dsh-live2d-theme/
 └── LICENSE
 ```
 
-宿主默认从包内 `assets/` 提供资源；如果你想用自己机器上的目录（例如 `D:\工具\live2`），
-在 profile 的 `cordis.patch.yml` 里给插件加 `config: { dataDir: 'D:/工具/live2' }` 即可覆盖。
 
 ## 安装
 
 **方式一：插件管理器（推荐，装好即用）**
 
 ```bash
-dsh plugin --profile desktop add github:<你的用户名>/dsh-live2d-theme
+dsh plugin --profile desktop add github:suwenner/dsh-live2d-theme
 ```
 
 或在 DSH 的「插件」页面里通过插件市场 / 从仓库安装。
@@ -60,7 +58,7 @@ dsh plugin --profile desktop add github:<你的用户名>/dsh-live2d-theme
 
 ## 手动改配置
 
-所有外观也在 **`D:\工具\live2\config.json`** 里，改完保存 → 刷新页面即生效（不用重启应用）：
+所有外观也在 **`config.json`** 里，改完保存 → 刷新页面即生效（不用重启应用）：
 
 ```json
 {
@@ -89,18 +87,18 @@ dsh plugin --profile desktop add github:<你的用户名>/dsh-live2d-theme
 | `marginRight` / `marginBottom` | 看板娘离右下角距离 |
 | `visible` | 是否默认显示 |
 
-**换背景图**：把任意图片放到 `D:\工具\live2\background\bg.jpg`，刷新即用（也可改 `backgroundImage` 指到别的文件名/路径）。
+**换背景图**：把任意图片放到 `live2\background\bg.jpg`，刷新即用（也可改 `backgroundImage` 指到别的文件名/路径）。
 
 ## 换模型
 
-**最简单**：面板里「看板娘模型」下拉框直接选，选完即时切换（会自动重新加载 PIXI 场景）。下拉列表来自 `GET /dsh-live2d-theme/models`，扫描 `D:\工具\live2\models\` 下的目录：
+**最简单**：面板里「看板娘模型」下拉框直接选，选完即时切换（会自动重新加载 PIXI 场景）。下拉列表来自 `GET /dsh-live2d-theme/models`，扫描 `live2\models\` 下的目录：
 
 - 目录里有 `*.model3.json` → 识别为 Cubism 4 模型；
 - 目录里有 `model.json` → 识别为 Cubism 2 模型。
 
 当前已内置两个模型：`HK416`（Q版，Cubism 2）、`Pio`（Q版，Cubism 2）。
 
-**手动加模型**：把模型目录整体丢进 `D:\工具\live2\models\<名字>\`，点面板里下拉框右边的 **⟳** 重新扫描即可。模型可从 https://github.com/hacxy/l2d-models 下载。
+**手动加模型**：把模型目录整体丢进 `live2\models\<名字>\`，点面板里下拉框右边的 **⟳** 重新扫描即可。模型可从 https://github.com/hacxy/l2d-models 下载。
 
 > Cubism 4 模型需要 `live2dcubismcore.min.js`——插件启动时已自动加载过，所以 Cubism 2 / 4 都能直接用。
 
