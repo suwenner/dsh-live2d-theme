@@ -108,23 +108,3 @@ dsh plugin --profile desktop add github:<你的用户名>/dsh-live2d-theme
 
 删掉 profile 里上面第 1、2 步加的内容，重启即可完全还原；或直接删 `$DSH_HOME/plugins/dsh-live2d-theme` 目录。
 
-## 发布 / 贡献
-
-这是一个标准的 DSH 插件包，可以直接发布到 GitHub / npm：
-
-1. 把 `package.json` 里的 `<your-name>` 替换成你的 GitHub 用户名（`repository`/`homepage`/`bugs`/`install`）；
-2. 按 `assets/README.md` 里的许可提示，**公开分发前把第三方模型换成你有权再分发的**（或删掉 `models/` 让用户自备）；
-3. 推上 GitHub：
-
-```bash
-cd dsh-live2d-theme
-git init -b main
-git add .
-git commit -m "feat: dsh-live2d-theme 1.0.0"
-git remote add origin https://github.com/<your-name>/dsh-live2d-theme.git
-git push -u origin main
-```
-
-4. 别人就能用 `dsh plugin --profile desktop add github:<your-name>/dsh-live2d-theme` 安装；
-   想进插件市场，再按 `dsh-plugin-market-index` 的索引格式把条目加进市场索引即可。
-
