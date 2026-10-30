@@ -54,7 +54,7 @@ dsh plugin --profile desktop add github:suwenner/dsh-live2d-theme
 - **✥** 按住拖动，把看板娘拖到屏幕任意位置；
 - **🙈** 隐藏/显示看板娘。
 
-面板里的 **保存** 会把当前设置写回 `D:\工具\live2\config.json`（走宿主 `POST /dsh-live2d-theme/config`，重启后也不丢）；**恢复默认** 复位成本内置默认值。面板里也可以直接选一张本地图片上传，会自动存成 `background\bg.<ext>` 并设为背景。
+面板里的 **保存** 会把当前设置写回 `live2\config.json`（走宿主 `POST /dsh-live2d-theme/config`，重启后也不丢）；**恢复默认** 复位成本内置默认值。面板里也可以直接选一张本地图片上传，会自动存成 `background\bg.<ext>` 并设为背景。
 
 ## 手动改配置
 
