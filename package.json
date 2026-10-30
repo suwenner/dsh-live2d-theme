@@ -35,11 +35,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<your-name>/dsh-live2d-theme.git"
+    "url": "git+https://github.com/suwenner/dsh-live2d-theme.git"
   },
-  "homepage": "https://github.com/<your-name>/dsh-live2d-theme#readme",
+  "homepage": "https://github.com/suwenner/dsh-live2d-theme#readme",
   "bugs": {
-    "url": "https://github.com/<your-name>/dsh-live2d-theme/issues"
+    "url": "https://github.com/suwenner/dsh-live2d-theme/issues"
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": "^4.0.1"
@@ -58,9 +58,9 @@
     },
     "install": {
       "preferred": "tarball",
-      "tarball": "https://codeload.github.com/<your-name>/dsh-live2d-theme/tar.gz/refs/heads/main",
-      "zip": "https://codeload.github.com/<your-name>/dsh-live2d-theme/zip/refs/heads/main",
-      "git": "https://github.com/<your-name>/dsh-live2d-theme.git"
+      "tarball": "https://codeload.github.com/suwenner/dsh-live2d-theme/tar.gz/refs/heads/main",
+      "zip": "https://codeload.github.com/suwenner/dsh-live2d-theme/zip/refs/heads/main",
+      "git": "https://github.com/suwenner/dsh-live2d-theme.git"
     }
   }
 }
